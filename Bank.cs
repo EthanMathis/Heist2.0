@@ -16,9 +16,8 @@ namespace Heist2
             SecurityGuardScore = guard;
             // IsSecure = true;
 
-            if (CashOnHand <= 0 &&
-                AlarmScore <= 0 &&
-                VaultScore <= 0 &&
+            if (AlarmScore <= 0 ||
+                VaultScore <= 0 ||
                 SecurityGuardScore <= 0)
             {
                 IsSecure = false;
